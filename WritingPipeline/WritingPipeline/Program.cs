@@ -94,7 +94,7 @@ class Program
             {
                 // magenta color for REVISION ROUND
                 Console.ForegroundColor = ConsoleColor.Magenta;
-                Console.WriteLine($"REVISION ROUND {rounds}");
+                Console.WriteLine($"REVISION ROUND {rounds + 1}");
                 Console.ResetColor();
 
                 Conversation convo = await writer.Run(
@@ -194,8 +194,8 @@ class Program
             REVISION TASKS:
             - task one
             - task two
-            If the draft is READY, still include the REVISION TASKS: header but do not include any bullet points.
-            Be strict: mark REVISE whenever the draft is unclear, incomplete, unfocused, disorganized, or contains unnecessary content.
+            If the draft is READY, Do not include any revision tasks.
+            Be strict: mark REVISE whenever the draft is unclear, incomplete, unfocused, disorganized, or contains unnecessary content. OR if ANY improvemnts need to be made.
             """
         );
     }
